@@ -24,7 +24,7 @@ function MainListing({ navigation }) {
     const renderList = ({ item }) => {
         return (
             <TouchableOpacity onPress={() => navigateToDetail(item)} style={{ justifyContent: "center", alignItems: "center", marginBottom: 20, borderRadius: 10, borderWidth: 1, borderColor: 'lightgray', margin: 10 }}>
-                <SharedElement id={`productImageId${item.id}`}>
+                <SharedElement id={`animationId${item.id}`}>
                     <Image style={{ height: 300, borderRadius: 10, width: 300 }} source={{ uri: item?.image }} resizeMode='contain' />
                 </SharedElement>
             </TouchableOpacity>

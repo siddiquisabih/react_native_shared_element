@@ -3,8 +3,6 @@ import { createSharedElementStackNavigator } from "react-navigation-shared-eleme
 import MainListing from "./mainlisting";
 import ListDetail from "./listDetail";
 
-
-
 const Stack = createSharedElementStackNavigator();
 
 const Route = () => {
@@ -15,7 +13,7 @@ const Route = () => {
 
                 <Stack.Screen name="listing" component={MainListing} />
                 <Stack.Screen name="listDetail" component={ListDetail} sharedElements={(route, otherRoute, showing) => {
-                    return [{ id: `productImageId${route.params.item.id}`, animation: "move" }]
+                    return [{ id: `animationId${route.params.item.id}`, animation: "move" }]
                 }} />
             </Stack.Navigator>
         </NavigationContainer>
