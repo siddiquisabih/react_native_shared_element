@@ -1,22 +1,16 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import {
     FlatList,
     Image,
     SafeAreaView,
-    ScrollView,
     StyleSheet,
-    Text,
-    Touchable,
     TouchableOpacity,
-    View,
 } from 'react-native';
 import { SharedElement } from 'react-navigation-shared-element';
  
 function MainListing({ navigation }) {
 
     const navigateToDetail = (item) => {
-        // navigation.push("listDetail", { item: { ...item, image: item.id == 1 ? './book.png' : '../cap.png' } })
         navigation.push("listDetail", { item })
     }
 
@@ -49,24 +43,4 @@ function MainListing({ navigation }) {
         </SafeAreaView>
     );
 }
-
-const styles = StyleSheet.create({
-    sectionContainer: {
-        marginTop: 32,
-        paddingHorizontal: 24,
-    },
-    sectionTitle: {
-        fontSize: 24,
-        fontWeight: '600',
-    },
-    sectionDescription: {
-        marginTop: 8,
-        fontSize: 18,
-        fontWeight: '400',
-    },
-    highlight: {
-        fontWeight: '700',
-    },
-});
-
 export default MainListing;
