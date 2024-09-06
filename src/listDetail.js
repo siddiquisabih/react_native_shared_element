@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-    Image,
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View,
-} from 'react-native';
+import { Image, SafeAreaView, ScrollView, Text, View, } from 'react-native';
 import { SharedElement } from 'react-navigation-shared-element';
 
 function ListDetail({ route }) {

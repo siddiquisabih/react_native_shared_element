@@ -2,8 +2,7 @@ import React from 'react';
 import {
     FlatList,
     Image,
-    SafeAreaView,
-    StyleSheet,
+    SafeAreaView, 
     TouchableOpacity,
 } from 'react-native';
 import { SharedElement } from 'react-navigation-shared-element';
